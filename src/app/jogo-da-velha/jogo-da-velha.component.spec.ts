@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { JogoDaVelhaService } from './shared';
 import { JogoDaVelhaComponent } from './jogo-da-velha.component';
 
 describe('JogoDaVelhaComponent', () => {
@@ -8,7 +8,9 @@ describe('JogoDaVelhaComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [JogoDaVelhaComponent]
+      declarations: [],
+      imports: [JogoDaVelhaComponent, JogoDaVelhaService],
+      providers:[JogoDaVelhaService]
     })
     .compileComponents();
 
@@ -20,4 +22,6 @@ describe('JogoDaVelhaComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+
 });

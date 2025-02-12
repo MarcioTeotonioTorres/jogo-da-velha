@@ -7,8 +7,7 @@ import { JogoDaVelhaService } from './shared';
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule, JogoDaVelhaComponent
-  ],
+    CommonModule, JogoDaVelhaComponent],
   exports: [JogoDaVelhaComponent],
   providers: [JogoDaVelhaService ]
 })
